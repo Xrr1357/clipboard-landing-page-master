@@ -19,7 +19,6 @@
 
 body {
 
-    border: solid 2px;
    /*  max-width: 1500px; */
     margin: auto;
     font-family: "Bai Jamjuree" , "PT Sans", sans-serif;
@@ -218,14 +217,17 @@ footer {
     margin: 3rem auto;
 }
 
-.icon__link svg {
+.fa-brands {
 
-    transition: all 0.3s ease;
+    color: var(--Gray-700);
+}
+.fa-brands:hover{
+
+    color: var(--Green-500);
+
 }
 
-.icon__link:hover svg {
-    stroke: var(--Green-500);
-}
+
 
 
 @media screen and (min-width : 1024px) {
@@ -342,4 +344,6 @@ footer {
 #footer__social__icons {
     gap: 1rem;
 }
+
+
 }
