@@ -217,11 +217,11 @@ footer {
     margin: 3rem auto;
 }
 
-.fa-brands {
+i.fa-brands {
 
     color: var(--Gray-700);
 }
-.fa-brands:hover{
+i.fa-brands:hover{
 
     color: var(--Green-500);
 
