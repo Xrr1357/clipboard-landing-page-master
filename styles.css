@@ -20,7 +20,7 @@
 body {
 
     border: solid 2px;
-    max-width: 1024px;
+   /*  max-width: 1500px; */
     margin: auto;
     font-family: "Bai Jamjuree" , "PT Sans", sans-serif;
     font-size: 18px;
@@ -218,14 +218,14 @@ footer {
     margin: 3rem auto;
 }
 
-.icons a:hover img {
+.icon__link svg {
 
-    color: var(--Green-500);
-    fill: var(--Green-500);
-
-
+    transition: all 0.3s ease;
 }
 
+.icon__link:hover svg {
+    stroke: var(--Green-500);
+}
 
 
 @media screen and (min-width : 1024px) {
@@ -258,19 +258,26 @@ footer {
 
     display: flex;
     flex-direction: row;
-    gap: 64px;
+    justify-content: start;
+    gap: 10vw;
+    max-width: 80%;
 }
 
 #features__image {
 
-    max-width: 50%;
+    max-width: 60%;
     height: auto;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
 }
 
 #features__items {
     text-align: start;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
 }
 
 #devices__image{
@@ -289,7 +296,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     gap: 1rem;
     max-width: 100%;
 }
